@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/navigation/logo2.png">
+    <title>BOB THE BUILDER SITE</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navStyling.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/general/projectPrices.css" rel="stylesheet" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body><!--site made by Florina-->
+<!--    
+        Bootstrap responsible navigation requires class .navbar to be used,
+        .navbar-expand-sm   used for responsibility 
+        .bg-primary         for background color 
+        .fixed-top          fixes position of navbar
+    -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <!--    
+            .navbar-brand class mostly used for logos or first texts
+        -->
+        <div class="navbar-brand p-3">
+            <img src="images/navigation/logo2w.png" alt="logo" height="80" width="80"> 
+        </div>
+
+        <!--    
+            button with class .navbar-toggler will be able to toggle elements that are collapsed
+            data-bs-toggle has to refer to .collapse class 
+            data-bs-target has to match the id given to elements that wraps collapsed items
+        -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#contentCollapse" 
+                aria-controls="contentCollapse" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <img src="images/navigation/menuw.png" alt="menu">
+          </button>
+
+
+        <!--   
+            .collapse wraps     elements inside not shown until the button pressed
+            .navbar-collapse    if added the elements will collapse upon responsive design
+            id                  is added for the button functionality
+        -->
+        <div class="collapse navbar-collapse" id="contentCollapse">
+            <!--    
+                .navbar-nav     class used for items to be displayed properly
+                .nav-item       used for items in list... in this case ul lists avoided 
+                                and generic div used for easier management
+                .nav-link       used for links in navigation and in this case both classes are in links 
+                .ms-auto        margin set to auto
+                .px-0           padding for both left, right set to 0
+            -->
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link px-0 ">Home</a>
+                <a href="projectPrices.html" class="nav-item nav-link px-0 active">Project prices</a>
+                <a href="portfolio.html" class="nav-item nav-link px-0">Portfolio</a>
+                <a href="contact.html" class="nav-item nav-link px-0">Contact</a>
+                <a href="onGoing.html" class="nav-item nav-link px-0">Ongoing projects</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Header containing the cover picture and advertisement: 4 reasons displayed on the same row on big screens-->
+    <header> <!--Florina-->
+        <div class="parallax"></div> <!--Michael--><!--Parallax for cover picture-->
+        <h1>Why should you choose us?</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg"><!--1st reason-->
+                    <h3>Vast experience</h3>
+                    <p>We have 30+ years experience in construction field and the quality speaks for itself!</p>
+                </div>
+                <div class="col-lg"><!--2nd reason-->
+                    <h3>Professional team</h3>
+                    <p>We have years of education and experience. <a href="contact.html" class="link" id="increaseSize">Meet the team!</a>
+                    </p>
+                </div>
+                <div class="col-lg"><!--3rd reason-->
+                    <h3>Flexibility</h3>
+                    <p>You design, we build! We take into account your unique needs and goals!</p>
+                </div>
+                <div class="col-lg"><!--4th reason-->
+                    <h3>Competitive prices</h3>
+                    <p>Stop paying overpriced services! We have exactly what you want for an irresistible price!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="wrapper">
+        <!--Button redirecting the user to the Contact page-->
+        <div id="contactBlock"> <!--Florina-->
+            <img src="images/Prices/bobLogo.png" alt="logo">
+            <a href="contact.html" class="link no-decoration">Contact us and get a non-binding offer!</a>
+        </div>
+
+        <!--4 types of projects displayed on 2 rows, containing: type, examples, representative image
+        with price range and customized motto-->
+        <div id="projectsBlock"><!--Florina-->
+            <hr>
+
+            <h2 id="Types">Project types</h2>
+
+            <div class="row"><!--First row-->
+                <div class="col-lg-6"><!--1st type-->
+                    <figure>
+                        <h3>Residential projects</h3>
+                        <p>- houses, apartments etc</p>
+                        <img src="images/Prices/ResidentialBuilding.jpg" title="Residential Building"
+                            alt="Residential building">
+                        <p>We transform houses into dream homes, bringing comfort and style to all families.</p>
+                        <figcaption>Price range:<br><b>$100.000 - $500.000</b></figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-lg-6"><!--2nd type-->
+                    <figure>
+                        <h3>Commercial projects</h3>
+                        <p>- office spaces, restaurants, shopping malls etc</p>
+                        <img src="images/Prices/CommercialBuilding.jpg" title="Commercial Building"
+                            alt="Commercial building">
+                        <p>We create exceptional commercial spaces that inspire success and innovation.</p>
+                        <figcaption>Price range:<br><b>$500.000 - $2.000.000</b></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row"><!--Second row-->
+                <div class="col-lg-6"><!--3rd type-->
+                    <figure>
+                        <h3>Industrial projects</h3>
+                        <p>- warehouses, factories, distribution centers etc</p>
+                        <img src="images/Prices/IndustrialBuilding.jpg" title="Industrial Building"
+                            alt="Industrial building">
+                        <p>Building impressive and efficient facilities was never easier.</p>
+                        <figcaption>Price range:<br><b>$2.000.000 - $10.000.000</b></figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-6"><!--4th type-->
+                    <h3>Road Construction</h3>
+                    <figure>
+                        <p>- roads, bridges etc</p>
+                        <img src="images/Prices/RoadConstruction.jpg" title="Infrastructure project"
+                            alt="Infrastructure project">
+                        <p>We pave the way for a better tomorrow for the community's progress.</p>
+                        <figcaption>Price range:<br><b>$1.000.000 - $5.000.000</b></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--Footer displayed on 2 rows, containing links to all pages and buttons redirecting the 
+        user to the Company's Facebook, Twitter and Instagram accounts on the first row and
+        the copyright notice on the second row-->
+    <footer><!--Matej & Florina-->
+        <div class="box">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4><!--Company related links-->
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Projects</h4><!--Projects related links-->
+                    <ul>
+                        <li><a href="projectPrices.html">Project prices</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="onGoing.html">Ongoing projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4><!--Social media links-->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/BobtheBuilder/"><img src="images/footer/facebook.png"
+                                alt="fb"></a>
+                        <a
+                            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjgvLWT4ZiCAxXLxAIHHfZMBpMQFnoECA8QAQ&url=https%3A%2F%2Ftwitter.com%2FBobtheBuilder&usg=AOvVaw1BUP9ZsFBfxZLP6hW9s_y4&opi=89978449"><img
+                                src="images/footer/twitter.png" alt="tw"></a>
+                        <a href="https://www.instagram.com/bobthebuilder/"><img src="images/footer/instagram.png"
+                                alt="ig"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright-row"><!--Copyright notice-->
+                <div class="copyright-col">
+                    <p id="copyright">Copyright &copy; 1992-2023 BobTheBuilder.com &trade; All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

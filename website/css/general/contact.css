@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Set the background color, text color and customize the cursor*/
+body {/*Florina*/
+    background-color: #49423d;
+    color: white;
+    cursor:url("../../icons/cursor.cur"), auto;
+}
+
+/*Set the font for headers*/
+h1,h3{/*Florina*/
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Set the background color, shadow and margin of the header. The text has a specified color and is centered*/
+h1{/*Florina*/
+    color: white;
+    text-align: center;
+    background-color: #dc7c0e;
+    margin: 1rem 3rem;
+    box-shadow: 10px 10px 3px #0000001c;
+}
+
+/*Set the size of the text in the headers (employee's name)*/
+h3{/*Florina*/
+    font-size: 50px;
+}
+
+/*Wrapper made to fix content overflow from the website just by simply adding padding*/
+.wrapper{/*Matej*/
+    padding: 20px;
+ }
+
+ /*Set the position of the content to be relative to its normal position, taking
+   into consideration the height of the navigation bar. The text is centered and
+   has shadow*/
+section{/*Florina*/
+    position: relative;
+    top: 150px;
+    margin-bottom: 200px;
+    height: auto;
+    text-align: center;
+    text-shadow: 0 0 2.5px black;
+}
+
+/*The links are underlined, have a specified color and weight*/
+section a{/*Florina*/
+    text-decoration: underline;
+    color: orange;
+    font-weight: 800;
+}
+
+/*
+    Positioning shape and image accordingly
+    additionaly making them move on hover
+*/
+.portrait{/*Matej*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.portrait .shape{/*Matej*/
+    position: absolute;
+
+    max-width: 400px;
+
+    top: 30px;
+    transition: 1s ease;
+}
+.portrait .self{/*Matej*/
+    position: relative;
+
+   
+    max-height: 300px;
+    width: 250px;
+
+    top: 10%;
+    transition: 1s ease;
+}
+
+.portrait  .muck{/*Matej*/
+    width: 180px;
+
+}
+
+.portrait:hover .shape{/*Matej*/
+    top: 50px;
+}
+.portrait:hover .self{/*Matej*/
+
+    top: 5%;
+}
+
+.wrapper{/*Matej*/
+    padding:20px;
+}
+
+
+@media screen and (max-width:576px)
+{
+    section{
+        top: 60px;
+    }
+   .portrait .shape{
+    max-width: 100%;
+    max-height: 90%;
+   }
+}
+@media screen and (min-width:577) and (max-width:700px)
+{
+    section{
+        top: 60px;
+    }
+
+}
+
+
+

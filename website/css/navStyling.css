@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*
+NOTES: 
+more links to be added, therefore make them spread out...
+*/
+
+.navbar {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #dc7c0e;
+}
+
+.navbar-nav a {
+    position: relative;
+
+    font-size: 32px;
+
+    color: rgb(255, 255, 255) !important;
+    /*    CAREFUL, cannot change color while "!important" is there*/
+}
+
+.navbar a:last-child {
+    margin-right: 5vw;
+}
+
+
+.navbar-nav a::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+
+
+    width: 0%;
+    height: 5px;
+
+    left: 0;
+    bottom: 10px;
+
+    transition: 0.5s ease;
+
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+
+.navbar button {
+    margin-right: 20px;
+}
+
+.navbar button img {
+    max-width: 35px;
+}
+
+/*Links are displayed occupying the whole navigation bar*/
+.navbar-nav.ms-auto {  /*Florina*/
+    box-sizing: border-box;
+    padding-left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+@media (min-width:701px) {
+    .navbar-nav a {
+        font-size: 26px;
+    }
+
+    .navbar-nav.ms-auto {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .navbar-nav a {
+        font-size: 16px;
+    }
+
+    /*On smaller screens, the navigation bar will lose some height*/
+    .navbar-brand{/*Florina*/
+        height: 50px;
+    }
+
+    /*On smaller screens, the logo will lose some height and it will
+      be vertically centered on the navigation bar */
+    .navbar-brand img{/*Florina*/
+        width: auto;
+        height: 50px;
+        position: relative;
+        bottom:15px;
+    }
+}

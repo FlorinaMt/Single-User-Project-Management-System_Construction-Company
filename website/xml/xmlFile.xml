@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<onGoingProjects>
+  <project schedule="Is Not Behind The Schedule" type="Road Construction">
+    <id>ABCDEFGHIJKLMNOPQRSTUVWXY</id>
+    <budget>300000.0</budget>
+    <date>
+      <day>16</day>
+      <month>12</month>
+      <year>2023</year>
+    </date>
+    <expectedDuration>18</expectedDuration>
+    <expectedExpenses>200000.0</expectedExpenses>
+    <estimatedTotalHours>400</estimatedTotalHours>
+    <resources>
+      <manHoursUsed>0.0</manHoursUsed>
+      <salaryExpenses>0.0</salaryExpenses>
+      <materialExpenses>0.0</materialExpenses>
+      <totalExpenses>0.0</totalExpenses>
+    </resources>
+  </project>
+</onGoingProjects>

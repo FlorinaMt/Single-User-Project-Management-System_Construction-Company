@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/navigation/logo2.png">
+    <title>BOB THE BUILDER SITE</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navStyling.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/general/contact.css" rel="stylesheet" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--    
+        Bootstrap responsible navigation requires class .navbar to be used,
+        .navbar-expand-sm   used for responsibility 
+        .bg-primary         for background color 
+        .fixed-top          fixes position of navbar
+    -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <!--    
+            .navbar-brand class mostly used for logos or first texts
+        -->
+        <div class="navbar-brand p-3">
+            <img src="images/navigation/logo2w.png" alt="logo" height="80" width="80"> 
+        </div>
+
+        <!--    
+            button with class .navbar-toggler will be able to toggle elements that are collapsed
+            data-bs-toggle has to refer to .collapse class 
+            data-bs-target has to match the id given to elements that wraps collapsed items
+        -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#contentCollapse" 
+                aria-controls="contentCollapse" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <img src="images/navigation/menuw.png" alt="menu">
+          </button>
+
+
+        <!--   
+            .collapse wraps     elements inside not shown until the button pressed
+            .navbar-collapse    if added the elements will collapse upon responsive design
+            id                  is added for the button functionality
+        -->
+        <div class="collapse navbar-collapse" id="contentCollapse">
+            <!--    
+                .navbar-nav     class used for items to be displayed properly
+                .nav-item       used for items in list... in this case ul lists avoided 
+                                and generic div used for easier management
+                .nav-link       used for links in navigation and in this case both classes are in links 
+                .ms-auto        margin set to auto
+                .px-0           padding for both left, right set to 0
+            -->
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link px-0 ">Home</a>
+                <a href="projectPrices.html" class="nav-item nav-link px-0">Project prices</a>
+                <a href="portfolio.html" class="nav-item nav-link px-0">Portfolio</a>
+                <a href="contact.html" class="nav-item nav-link px-0 active">Contact</a>
+                <a href="onGoing.html" class="nav-item nav-link px-0">Ongoing projects</a>
+            </div>
+        </div>
+    </nav> <!--Navbar by Matej-->
+
+
+
+    <!--Section containing contact information about Company's employee, as well as their functions and pictures -->
+    <div class="wrapper"><!--Matej & Florina-->
+        <section>
+            <h1>Meet the team!</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><!--1st employee-->
+                        <div class="portrait">
+                            <img src="images/Contact/shape.png" class="shape" alt="Michal Barczuk">
+                            <img src="images/Contact/skip.png" title="Michal Barczuk" alt="Michal Barczuk" class="self">
+                        </div>
+                        <h3>Michal Barczuk</h3>
+                        <ul>
+                            <li><b>Function:</b><br> Project manager</li>
+                            <li><b>Mail:</b> <a href="mailto:344615@via.dk">344615@via.dk</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6"><!--2nd employee-->
+                        <div class="portrait">
+                            <img src="images/Contact/shape.png" class="shape" alt="Octavian Naom">
+                            <img src="images/Contact/muck.png" title="Octavian Naom" alt="Octavian Naom" class="self muck">
+                        </div>
+                        <h3>Octavian Naom</h3>
+                        <ul>
+                            <li><b>Function:</b><br> Superintendent</li>
+                            <li><b>Mail:</b> <a href="mailto:343812@via.dk">343812@via.dk</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6"><!--3rd employee-->
+                        <div class="portrait">
+                            <img src="images/Contact/shape.png" class="shape" alt="Florina Mitigus">
+                            <img src="images/Contact/scambler.PNG" title="Florina Mitigus" alt="Florina Mitigus" class="self">
+                        </div>
+                        <h3>Florina Mitigus</h3>
+                        <ul>
+                            <li><b>Function:</b><br> Structural engineer</li>
+                            <li><b>Mail:</b> <a href="mailto:344692@via.dk">344692@via.dk</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6"><!--4th employee-->
+                        <div class="portrait">
+                            <img src="images/Contact/shape.png" class="shape" alt="Matej Palas">
+                            <img src="images/Contact/lofty.png" title="Matej Palas" alt="Matej Palas" class="self">
+                        </div>
+                        <h3>Matej Palas</h3>
+                        <ul>
+                            <li><b>Function:</b><br> Architect</li>
+                            <li><b>Mail:</b> <a href="mailto:344682@via.dk">344682@via.dk</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Footer displayed on 2 rows, containing links to all pages and buttons redirecting the 
+        user to the Company's Facebook, Twitter and Instagram accounts on the first row and
+        the copyright notice on the second row-->
+    <footer><!--Matej & Florina-->
+        <div class="box">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4><!--Company related links-->
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Projects</h4><!--Projects related links-->
+                    <ul>
+                        <li><a href="projectPrices.html">Project prices</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="onGoing.html">Ongoing projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4><!--Social media links-->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/BobtheBuilder/"><img src="images/footer/facebook.png"
+                                alt="fb"></a>
+                        <a
+                            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjgvLWT4ZiCAxXLxAIHHfZMBpMQFnoECA8QAQ&url=https%3A%2F%2Ftwitter.com%2FBobtheBuilder&usg=AOvVaw1BUP9ZsFBfxZLP6hW9s_y4&opi=89978449"><img
+                                src="images/footer/twitter.png" alt="tw"></a>
+                        <a href="https://www.instagram.com/bobthebuilder/"><img src="images/footer/instagram.png"
+                                alt="ig"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright-row"><!--Copyright notice-->
+                <div class="copyright-col">
+                    <p id="copyright">Copyright &copy; 1992-2023 BobTheBuilder.com &trade; All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

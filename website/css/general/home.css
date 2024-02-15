@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{/*Matej*/
+    position: relative;
+    background-color: #49423d;
+    color: white;
+    cursor:url("../../icons/cursor.cur"), auto;
+}
+
+h1,h2,h3{ /*Matej*/
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1{/*Matej*/
+    height: 45px;
+
+    font-size: 50px;
+
+    margin: 0;
+}
+
+h2{/*Matej*/
+    background-color: #dc7c0e;
+    box-shadow: 10px 10px 3px #0000001c;
+
+    width: 100%;
+    
+    text-align: center;
+    font-size: 55px;
+}
+
+/*      Header Parallaxing      */
+
+.wrapper{/*Matej*/
+    height: 100vh; /*  Making sure we scrolling the wrapper instead of body*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /*  
+    Setting up 3D view of images, if image is further away on z axis
+    it moves slower
+    */
+    perspective: 10px;
+}
+header{/*Matej*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    transform-style: preserve-3d; /* for 3D stuff to work correctly*/
+    z-index: -1;
+}
+
+
+.foreground, .middleground, .background{/*Matej*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*
+    After putting images into 3D perspecitve we can shift their position on Z axis,
+    Images will appear smaller therefor we have to scale them afterwards accordingly.
+
+    The effect applies in a way that if the image is further away it will move slower opon scrolling
+*/
+.background{/*Matej*/
+    background-color: #955e1f;
+    transform: translateZ(-12px) scale(2.2); 
+}
+.middleground{/*Matej*/
+    transform: translateZ(-8px) scale(1.8);
+}
+.foreground{/*Matej*/
+    transform: translateZ(-5px) scale(1.5);
+}
+
+
+/*      The front page heading...       */
+.heading{/*Matej*/
+    position: absolute;
+    
+    height: 100px;
+    max-width: 50%;
+    
+    top: 50%;
+    left: 35vw;
+    
+    text-shadow: 0 0 20px black; /*For more visibility*/
+}
+.heading p{/*Matej*/
+    font-size: 26px;
+    margin: 0;
+}
+
+
+/*      About us      */
+.aboutUs {/*Matej*/
+    background-color: #49423d;
+
+    position: relative;
+    height: 300px;
+
+    text-align: center;
+    padding-top: 4rem;
+}
+.aboutUs h3{/*Matej*/
+    width: 50%;
+    margin: auto;
+}
+.aboutUs p{/*Matej*/
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/*      Styling for text boxes        */
+.boxAdjust{/*Matej*/
+    padding: 0 20px;
+    margin-bottom: 3rem;
+}
+
+.floatFirst img{/*Matej*/
+    float: left;
+    max-width: 200px;
+    
+}
+.floatSecond img{/*Matej*/
+    float: right;
+    max-width: 300px;
+}
+
+
+
+
+/* 
+background overlay fix for parallaxing,
+basically a div behind every element set to the background color
+to cover the images from the header appearing even when on the bottom of website
+ */
+.fix{ /*Matej*/
+    position: absolute;
+    
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-color: #49423d;
+    z-index: -1;
+}
+
+
+
+
+/*  Medium screens  */
+@media screen and (max-width: 850px){
+    .aboutUs p{/*Matej*/
+        font-size: 16px;
+        width: 80%;
+    }
+    .boxAdjust b{/*Matej*/
+        font-size: 20px;
+    }
+}
+/*  Small screen    */
+@media screen and (max-width: 576px) {
+
+    h1{/*Matej*/
+        height: auto;
+    }
+    
+    h3{/*Matej*/
+        font-size: 38px;
+    }
+    .container p, .container p{/*Matej*/
+        font-size: 22px;
+    }
+
+    .aboutUs {/*Matej*/
+        height: 500px;
+    }
+
+}

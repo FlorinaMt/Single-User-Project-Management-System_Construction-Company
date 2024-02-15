@@ -1,0 +1,79 @@
+
+.row { --bs-gutter-x: 0px;}
+
+/*  Body    */
+body {
+    background-color: #49423d;
+    color: white;
+    cursor:url("../../icons/cursor.cur"), auto;
+}
+
+/*  Headers */
+h1{
+    color: white;
+    text-align: center;
+    background-color: #bf6c0d;
+    box-shadow: 10px 10px 3px #0000001c;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    margin-top: 136px; /* Adding margin so it appears before navbar*/
+}
+h2{
+    color: white;
+    text-align: center;
+    background-color: #bf6c0d;
+    box-shadow: 0 5px 3px #0000001c;
+
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 2px;
+
+}
+h3{
+    color: orange;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+
+}
+
+h5{
+    font-size: 16px;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
+
+
+
+/*  Box alignment  */
+
+/*  Box Styling */
+.blockStyle{
+    position: relative;
+    font-size: 22px;
+
+    background-color: rgb(93, 82, 62);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.401);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.181);
+    
+    height: 92%;
+    padding:8px;
+    margin: 0 2px;
+
+}
+/*      Select everything except the last child of selected parent      */
+.blockStyle > *:not(:last-of-type){
+    
+    margin-bottom:  1px;
+}
+.col-md-4{
+    margin-bottom: 20px;
+}
+/*   hardcoding the margin so the heading is visible with navbar responsive design   */
+@media (max-width: 700px) {
+    h1 {
+        margin-top: 75px;
+    }
+}

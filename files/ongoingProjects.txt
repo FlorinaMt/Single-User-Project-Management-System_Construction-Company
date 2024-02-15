@@ -1,0 +1,19 @@
+1
+Road Construction
+ABCDEFGHIJKLMNOPQRSTUVWXY
+300000.0
+16
+12
+2023
+18
+1
+0.0
+0.0
+0.0
+200000.0
+400
+200.0
+40.0
+0
+1
+none

@@ -1,0 +1,146 @@
+/*
+    Setting the footer max-width 
+*/
+.box {/*Matej*/
+    max-width: 1170px;
+    margin: auto;
+}
+/*
+    This is applied to all the ul elements even outside of the footer
+*/
+ul {/*Matej*/
+    list-style: none;
+}
+
+footer {/*Matej*/
+    position: relative;
+    background-color: rgb(87, 87, 87);
+    padding: 70px 20px;
+    clear:both;
+}
+
+.footer-row {/*Matej*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {/*Matej*/
+    width: 33%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {/*Matej*/
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    width: 50%;
+    color: orange;
+    text-transform: capitalize;/* Each h4 is gonna start with capital letter*/
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+
+
+/*      Styling around headings     */
+/*
+    Using before and after element, 
+    similar thing that could be achieved with border on top and left only.
+*/
+.footer-col h4::before {/*Matej*/
+    content: '';
+    position: absolute;
+    background-color: orange;
+
+    width: 100%;
+    height: 5px;
+
+    top: -10px;
+    left: -10px;
+
+    border-radius: 20px;
+}
+
+.footer-col h4::after {/*Matej*/
+    content: '';
+    position: absolute;
+    background-color: orange;
+
+    width: 5px;
+    height: 110%;
+
+    top: -10px;
+    left: -10px;
+
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.footer-col ul li:not(:last-child) {/*Matej*/
+    /*  affects everything except last element  */
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {/*Matej*/
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {/*Matej*/
+    padding-left: 8px;
+}
+
+
+footer img {/*Matej*/
+    max-width: 60px;
+}
+
+.footer-col .social-links a {/*Matej*/
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 35px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover {/*Matej*/
+    background-color: white;
+    border-radius: 25px;
+}
+#copyright{/*Florina*/
+    color:rgb(195, 195, 195);
+}
+
+@media (max-width: 900px) {/*Matej*/
+
+    /*
+        on medium screens setting the width of one column to 50%
+        so there are 2 of them next to each other at max
+        others are positioned under
+    */
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 567px) {/*Matej*/
+    /*
+        on small screen positioning them under each other
+    */
+    .footer-col {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

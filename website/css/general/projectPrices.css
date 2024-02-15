@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*Matej*/
+
+/*The cover picture is occupying the whole screen's width, taking into consideration
+  navigation bar's height*/
+#backgroundImage {  /*Florina*/
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+/*Set the background color, customize the cursor, manage the overflow*/
+body {/*Florina*/
+    overflow-x: hidden;
+    background-color: #49423d;
+    cursor:url("../../icons/cursor.cur"), auto;
+    
+}
+
+/*Wrapper made to fix content overflow from the website just by simply adding padding*/
+.wrapper{/*Matej*/
+   padding: 20px;
+}
+
+
+/*Set headers' font*/
+h1, h2, h3{/*Matej*/
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Apply shadow to headers and paragraphs*/
+h1, h3, p{/*Florina*/
+    text-shadow: 0 0 2.5px black;
+}
+
+/*Indent and set the color for headers*/
+h3 {/*Florina*/
+    text-indent: 5%;
+    color: white;
+}
+
+/*Set colors, manage text appearence and make spacious surroundings for headers*/
+h2{/*Florina*/
+    color: white;
+    background-color: #dc7c0e;
+    width: 100%;
+    text-align: center;
+    margin-bottom:40px;
+    box-shadow: 10px 10px 3px #0000001c;
+}
+
+/*The header is displayed central, on the cover page, relative
+  to its normal position, occupying 70% of the screen's width.
+  The text is also centered in its container, with a specified color.
+  A background color, shadow, padding and rounded corners were added
+  to improve the appearance.*/
+h1 {/*Florina*/
+    z-index: index -1;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    margin: auto;
+    background-color: #dc7c0e;
+    padding: 10px;
+    width: 70%;
+    border-radius: 50px;
+    box-shadow: 1px 5px 3px rgb(41, 38, 38);
+}
+
+/*Set color, decoration and weight for links*/
+.link{/*Florina*/
+    text-decoration: underline;
+    font-weight: 900;
+    color: white;
+}
+
+/*Set a central position for each picture in its container.
+  Each picture occupy 80% of its container's width*/
+figure img {/*Florina*/
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+/*Each picture comes with a caption that specify the price range.
+  The caption is positioned on the picture, in the bottom-left corner,
+  relative to its normal position. The text is centered in its container
+  having a specified color, size and shadow. A background color, shadow, 
+  and padding were added to improve the appearance.*/
+figcaption {/*Florina*/
+    z-index: index -1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    width: 50%;
+    float: left;
+    position: relative;
+    bottom: 160px;
+    margin-left: 10px;
+    background-color: #dc7c0e;
+    padding: 10px 0px;
+    box-shadow: 1px 5px 3px rgb(41, 38, 38);
+    
+}
+
+/*The list of reasons has a background color, shadow, padding and specified
+  margins, to improve appearance. The text is centered and has a specified color */
+header [class*="col-"] {/*Florina*/
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    background-color: #FFA500;
+    padding: 20px;
+    box-shadow: 1px 5px 3px rgb(41, 38, 38);
+    max-width: 100%;
+}
+
+/*Paragraphs occupy the whole width of their container. The text is centered, 
+  has shadow, color and weight. A background color, shadow, margin and padding 
+  were added to improve the appearance*/
+figure p {/*Florina*/
+    color: white;
+    width: 100%;
+    text-align: center; 
+    text-shadow: 0 0 2.5px black;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: #FFA500;
+    padding: 5px;
+    box-shadow: 1px 5px 3px rgb(41, 38, 38);
+}
+
+.parallax {/*Michael*/
+    background-image: url("../../images/Prices/low-angle-view-skyscrapers.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-size-adjust: 500%;
+    text-align: center;
+}
+
+
+/*Contact us*/
+#contactBlock{/*Matej*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 300px;
+    
+    text-align: center;
+}
+/*
+    putting the image behind the contact us text
+*/
+#contactBlock img{/*Matej*/
+    position: absolute;
+
+    max-width: 500px;
+    top: 0;
+
+    z-index: -1;
+}
+#contactBlock a{/*Matej*/
+    background-color: orange;
+    color: white;
+    
+    position: absolute;
+    padding: 5px;
+    bottom: 15px;
+
+    text-decoration: none;
+    font-size: 42px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#contactBlock a:hover{/*Matej*/
+    background-color: wheat;
+    color: black;
+}
+
+/*The links will react to hover by increasing their size*/
+#increaseSize:hover{/*Florina*/
+    font-size: 108%;
+}
+
+
+@media screen and (max-width:576px){/*Florina*/
+
+ /*On small screens, the captions will be displayed under the
+   pictures, to avoid covering them*/
+ figcaption{
+   bottom:10px;
+   width:100%;
+   display:inline;
+   margin-left: 0px;
+ }
+
+ /*On small screens, the contact button will be smaller, to
+   not accupy too much space*/
+ #contactBlock img{
+    font-size:28px;
+    max-width: 100%;
+ }
+     /*Removing the margin on small screens*/
+     header [class*="col-"]{/*Matej*/
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:353px) and (max-width:576px) {/*Florina*/
+
+    /*On small screens, the captions will be displayed with smaller font-size,
+      to avoid covering other paragraphs*/
+    figcaption {
+        font-size: 15px;
+    }
+  /*On small screens, the contact button will be smaller, to
+    not accupy too much space*/
+    #contactBlock a{
+        font-size: 28px;
+    }
+    #contactBlock img{
+        max-width: 100%;
+    }
+
+
+}
+
+
+@media screen and (min-width:577px) and (max-width: 991px) {/*Florina*/
+
+/* On medium and large screens, it is enough for the header to occupy less width*/
+    h1 {
+        width: 50%;
+    }
+    /*Removing the margin on small screens*/
+    header [class*="col-"]{/*Matej*/
+        margin-left: 0;
+    }
+ 
+}
+@media screen and (min-width:992px){/*Matej*/
+    /*On large screens, the captions will be displayed with larger font-size,
+      to improve readability*/    
+    figcaption {
+        font-size: 18px;
+    }
+}

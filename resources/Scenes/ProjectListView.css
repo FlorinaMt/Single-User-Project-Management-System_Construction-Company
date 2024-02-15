@@ -1,0 +1,127 @@
+#bigButton{
+    -fx-text-transform: uppercase;
+    -fx-text-decoration: none;
+    -fx-padding: 15px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 4px;
+    -fx-display: inline-block;
+    -fx-border: none;
+    -fx-transition: all 0.4s ease 0s;
+    -fx-font-family: "Arial";
+        -fx-font-weight: bold;
+        -fx-text-fill:  black;
+        -fx-font-size: 20px;
+
+}
+
+     #titleText{
+         -fx-font-family: "Arial";
+
+                      -fx-font-weight: bold;
+                      -fx-font-size: 18px;
+                      -fx-text-fill:  #66B2FF;
+     }
+#Button{
+     -fx-text-transform: uppercase;
+     -fx-text-decoration: none;
+     -fx-background-color: #E0E0E0;
+     -fx-padding: 20px;
+     -fx-border-radius: 5px;
+     -fx-display: inline-block;
+     -fx-border: none;
+     -fx-transition: all 0.4s ease 0s;
+     -fx-font-family: "Arial";
+         -fx-font-weight: bold;
+         -fx-text-fill:  black;
+          -fx-font-size: 16px;
+
+ }
+#Button:hover{
+-fx-background-color: #dc7c0e;
+    -fx-font-family: "Arial";
+        -fx-font-weight: bold;
+            -fx-text-fill: #F8F8FF;
+}
+#dropDownButton{
+     -fx-text-transform: uppercase;
+     -fx-text-decoration: none;
+     -fx-background-color: #E0E0E0;
+     -fx-padding: 20px;
+     -fx-border-radius: 5px;
+     -fx-display: inline-block;
+     -fx-border: none;
+     -fx-transition: all 0.4s ease 0s;
+     -fx-font-family: "Arial";
+         -fx-font-weight: bold;
+         -fx-text-fill:  black;
+         -fx-font-size: 12px;
+          -fx-font-size: 16px;
+          -fx-padding: 0;
+
+ }
+#dropDownButton:hover{
+-fx-background-color: #dc7c0e;
+    -fx-letter-spacing: 1px;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 5, 4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.57), 5, 0.0, 0, 5);
+    -fx-transition: all 0.4s ease 0s;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #F8F8FF;
+    -fx-alignment: center;
+    -fx-font-size: 16px;
+}
+#bigButton:hover{
+-fx-background-color: #dc7c0e;
+    -fx-font-family: "Arial";
+        -fx-font-weight: bold;
+            -fx-text-fill: #F8F8FF;
+            -fx-font-size: 20px;
+}
+#SwButton{
+-fx-font-family: "Arial";
+ -fx-text-fill: white;
+ -fx-font-weight: bold;
+ -fx-font-size: 12px;
+
+}
+ #body{
+    -fx-background-image: url('/images/graphicsFront.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-color: #49423d;
+    }
+ #filterText{
+ -fx-font-family: "Arial";
+                 -fx-font-weight: bold;
+                 -fx-font-size: 14px;
+              -fx-text-fill:    #E0E0E0;
+
+
+    }
+    #TEXT{-fx-font-family: "Arial";
+
+                     -fx-font-weight: bold;
+                     -fx-font-size: 14px;
+                  -fx-text-fill:    #E0E0E0;
+
+
+        }
+        #type{
+        -fx-font-family: "Arial";
+                         -fx-font-weight: bold;
+                         -fx-font-size: 18px;
+                      -fx-text-fill: white;
+
+        }
+.action-button {
+    -fx-cursor: hand;
+
+}
+
+.selected-button {
+    -fx-underline: true;
+    -fx-text-fill: white !important;
+    -fx-background-color: #dc7c0e;
+}

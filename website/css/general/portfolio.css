@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: #49423d;
+    color: white;
+    cursor: url("../../icons/cursor.cur"), auto;
+}
+
+h2,
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h2 {
+    background-color: #dc7c0e;
+
+    width: 100vw;
+    text-align: center;
+    font-size: 55px;
+    box-shadow: 10px 10px 3px #0000001c;
+}
+
+/*      Portfolio tab        */
+
+.Portfolio .row {
+    display: flex;
+}
+
+.FirstRow {
+    padding: 0 20px;
+}
+
+.FirstRow h3 {
+    background-color: #dc7c0e;
+    box-shadow: 10px 10px 3px #0000001c;
+    text-shadow: 0 0 2.5px black;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.SecondRow h3 {
+    background-color: #dc7c0e;
+    box-shadow: 10px 10px 3px #0000001c;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.SecondRow {
+    padding: 0 20px;
+    margin-bottom: 5vw;
+}
+
+/*  Cards and carousels  */
+
+.card {
+    background-color: rgb(87, 87, 87);
+    color: white;
+    width: 100%;
+}
+
+.card img {
+    height: 20vw;
+    /* Adjust the height as needed */
+    width: auto;
+    /* This will maintain the aspect ratio */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.card a {
+    background-color: #dc7c0e;
+    transition: all .2s ease-in-out;
+    box-shadow: 10px 10px 3px #0000001c;
+}
+
+.card a:hover {
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+}
+
+/*      parallaxing     */
+
+.parallax {
+    margin: 3rem 0;
+    background-image: url("../../images/Portfolio/carouselStock1.jpg");
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frontTextWrapper {
+    max-width: 50%;
+    position: absolute;
+    top: 18vw;
+    left: 30vw;
+    height: 100px;
+    width: auto;
+}
+
+.frontTextWrapper h3 {
+    background-color: #dc7c0e;
+    font-size: 42px;
+    text-shadow: 0 0 2.5px black;
+    padding: 10px;
+}
+
+.frontTextWrapper p {
+    font-size: 18px;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/background1.png");
+    background-size: cover;
+    background-position: top;
+    top: 112px;
+    height: 50vh;
+}
+
+@media (min-width: 926px) {}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .Portfolio .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousels {
+        width: 220%;
+    }
+
+    .FirstRow {
+        margin-bottom: 5vw;
+    }
+
+    .Portfolio h3 {
+        width: 220%;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .card {
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    h3 {
+        font-size: 38px;
+    }
+
+    .container p,
+    .container p {
+        font-size: 22px;
+    }
+
+    .frontTextWrapper {
+        display: none;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .card {
+        width: auto;
+    }
+}

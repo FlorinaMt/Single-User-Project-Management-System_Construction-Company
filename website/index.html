@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/navigation/logo2.png">
+    <title>BOB THE BUILDER SITE</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navStyling.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/general/home.css" rel="stylesheet" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body> <!--The index made by Matej-->
+
+    <!--    
+        Bootstrap responsible navigation requires class .navbar to be used,
+        .navbar-expand-sm   used for responsibility 
+        .bg-primary         for background color 
+        .fixed-top          fixes position of navbar
+    -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <!--    
+            .navbar-brand class mostly used for logos or first texts
+        -->
+        <div class="navbar-brand p-3">
+            <img src="images/navigation/logo2w.png" alt="logo" height="80" width="80"> 
+        </div>
+
+        <!--    
+            button with class .navbar-toggler will be able to toggle elements that are collapsed
+            data-bs-toggle has to refer to .collapse class 
+            data-bs-target has to match the id given to elements that wraps collapsed items
+        -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#contentCollapse" 
+                aria-controls="contentCollapse" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <img src="images/navigation/menuw.png" alt="menu">
+          </button>
+
+
+        <!--   
+            .collapse wraps     elements inside not shown until the button pressed
+            .navbar-collapse    if added the elements will collapse upon responsive design
+            id                  is added for the button functionality
+        -->
+        <div class="collapse navbar-collapse" id="contentCollapse">
+            <!--    
+                .navbar-nav     class used for items to be displayed properly
+                .nav-item       used for items in list... in this case ul lists avoided 
+                                and generic div used for easier management
+                .nav-link       used for links in navigation and in this case both classes are in links 
+                .ms-auto        margin set to auto
+                .px-0           padding for both left, right set to 0
+            -->
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link px-0 active">Home</a>
+                <a href="projectPrices.html" class="nav-item nav-link px-0">Project prices</a>
+                <a href="portfolio.html" class="nav-item nav-link px-0">Portfolio</a>
+                <a href="contact.html" class="nav-item nav-link px-0">Contact</a>
+                <a href="onGoing.html" class="nav-item nav-link px-0">Ongoing projects</a>
+            </div>
+        </div>
+    </nav><!--NavBar by Matej-->
+
+    <!--
+        Wrapper made for the parallaxing in header to work...
+    -->
+    <div class="wrapper"> 
+        <header>
+            <img src="images/home/parallaxBackgroundFrontPage/background1.png" class="background" alt="bcg">
+            <img src="images/home/parallaxBackgroundFrontPage/middleground1.png" class="middleground" alt="bcg">
+            <img src="images/home/parallaxBackgroundFrontPage/foreground1.png" class="foreground" alt="bcg">
+            <div class="heading">
+                <h1>Bob the builder</h1>
+                <p>Build better, together</p>
+                
+            </div>
+        </header>
+        
+        
+        <div class="aboutUs">
+            <h3>About us</h3>
+            <p>
+                Our company specializes in a wide range of construction projects, from residential homes to commercial buildings. 
+                Whether you need a small renovation or a complete construction project, we have the expertise to handle it all.
+                What sets us apart is our commitment to quality and attention to detail. 
+                We take pride in delivering exceptional craftsmanship and ensuring that every project is completed to the highest standards. </p>
+            </div>
+            
+            <!--
+            <div class="parallax"></div>
+            -->
+            
+            
+            <div class="container">
+                <div class="fix"></div> <!-- to fix parallax -->
+                <div class="row">
+                    <h2>Articles</h2>
+                    <div class="col-md-6 boxAdjust">
+                        <h3>The Future of Sustainable Construction: Building Tomorrow Today</h3>
+                        <div class="floatFirst">
+                            <img src="images/home/article1.jpg" alt="stock5" style="margin-right: 20px;">
+                            <p><b>Published on: October 27, 2023</b></p>
+                            <p> In an exciting development for the construction industry, Bob the Builder's Company has announced the groundbreaking of
+                                a groundbreaking sustainable project that aims to revolutionize the way buildings are constructed. 
+                                This ambitious endeavor showcases the company's commitment to environmental stewardship and cutting-edge construction techniques.
+                            </p>
+                            <p>
+                                Furthermore, the construction materials used in our projects are carefully selected to minimize environmental impact. 
+                                The company is prioritizing the use of recycled and locally sourced materials, reducing the need for resource-intensive 
+                                manufacturing processes and long-distance transportation. This approach not only reduces carbon emissions but also supports the local economy.</p>
+                        </div>
+                        
+                    </div>
+                <div class="col-md-6 boxAdjust">
+                    <h3>Revolutionizing Urban Landscapes: The Rise of Vertical Gardens</h3>
+                    <div class="floatSecond">
+                        <p><b>Published on: October 30, 2023</b></p>
+                        <img src="images/home/article2.jpg" alt="stock4">
+                        <p>In the heart of the urban jungle, a new trend is blossoming – vertical gardens are reshaping the way we envision cityscapes. 
+                            As concrete structures reach for the sky, architects and urban planners are weaving greenery into the very fabric of our cities, 
+                            creating harmonious environments where nature and architecture coexist in perfect synergy.
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <h2>Analytic report</h2>
+                <div class="col-sm-12 boxAdjust">
+                    <h3>Vertical Gardens in Urban Construction: Q3 2023</h3>
+                    <p><b>Report Date: October 30, 2023</b></p>
+                    <p>Executive Summary</p>
+                    <p>Executive Summary:
+                        Vertical gardens, a pioneering concept in urban construction, have gained significant traction over the third quarter of 2023. 
+                        This report delves into the adoption rates, benefits, and challenges associated with integrating vertical gardens into our projects.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 boxAdjust">
+                    <h3>Key Findings:</h3>
+                    <ul>
+                        <li>
+                            <b>Adoption Rates</b>:
+                            <p>The adoption of vertical gardens in our projects saw an impressive 45% increase compared to the previous quarter. 
+                                This surge is attributed to heightened interest from clients seeking sustainable and aesthetically pleasing urban solutions.</p>
+                        </li>
+                        <li>
+                            <b>Client Satisfaction</b>:
+                            <p>Projects featuring vertical gardens received an average client satisfaction rating of 4.7 out of 5. 
+                                The integration of greenery into urban spaces has garnered positive feedback, 
+                                particularly for its positive impact on mental well-being and aesthetics.</p>
+                        </li>
+                        <li>
+                            <b>Environmental Impact</b>:
+                            <p>An estimated 14,000 square feet of vertical garden space was implemented across our projects in Q3 2023. 
+                                This resulted in a notable reduction of carbon emissions and a significant increase in biodiversity within urban areas.</p>
+                        </li>
+                        <li>
+                            <b>Cost-Benefit Analysis</b>:
+                            <p>An estimated 14,000 square feet of vertical garden space was implemented across our projects in Q3 2023. 
+                                This resulted in a notable reduction of carbon emissions and a significant increase in biodiversity within urban areas.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 boxAdjust">
+                    <h3>Challenges and Recommendations:</h3>
+                    <ul>    
+                        <li>
+                            <b>Structural Considerations</b>:
+                            <p>While vertical gardens enhance aesthetics, careful structural planning is required to ensure the integrity of the building. 
+                                Collaboration with structural engineers from project inception is recommended.</p>
+                        </li>
+                        <li>
+                            <b>Plant Selection</b>:
+                            <p>Optimal plant selection is crucial for the success of vertical gardens. 
+                                Further research into local flora and the development of a comprehensive plant database is advised.</p>
+                        </li>
+                        <li>
+                            <b>Community Engagement</b>:
+                            <p>Engaging local communities in the maintenance and cultivation of vertical gardens fosters a sense of ownership and pride. 
+                                Implementing educational initiatives can facilitate this process.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Footer displayed on 2 rows, containing links to all pages and buttons redirecting the 
+        user to the Company's Facebook, Twitter and Instagram accounts on the first row and
+        the copyright notice on the second row-->
+    <footer><!--Matej & Florina-->
+        <div class="box">
+
+
+
+
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4><!--Company related links-->
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Projects</h4><!--Projects related links-->
+                    <ul>
+                        <li><a href="projectPrices.html">Project prices</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="onGoing.html">Ongoing projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4><!--Social media links-->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/BobtheBuilder/"><img src="images/footer/facebook.png"
+                                alt="fb"></a>
+                        <a
+                            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjgvLWT4ZiCAxXLxAIHHfZMBpMQFnoECA8QAQ&url=https%3A%2F%2Ftwitter.com%2FBobtheBuilder&usg=AOvVaw1BUP9ZsFBfxZLP6hW9s_y4&opi=89978449"><img
+                                src="images/footer/twitter.png" alt="tw"></a>
+                        <a href="https://www.instagram.com/bobthebuilder/"><img src="images/footer/instagram.png"
+                                alt="ig"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright-row"><!--Copyright notice-->
+                <div class="copyright-col">
+                    <p id="copyright">Copyright &copy; 1992-2023 BobTheBuilder.com &trade; All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    
+
+
+
+  
+
+</body>
+</html>

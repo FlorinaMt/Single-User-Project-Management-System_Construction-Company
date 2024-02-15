@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/navigation/logo2.png">
+    <title>BOB THE BUILDER SITE</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navStyling.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/general/portfolio.css" rel="stylesheet" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body><!--site made by Michael-->
+
+    <!--    
+        Bootstrap responsible navigation requires class .navbar to be used,
+        .navbar-expand-sm   used for responsibility 
+        .bg-primary         for background color 
+        .fixed-top          fixes position of navbar
+    -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <!--    
+            .navbar-brand class mostly used for logos or first texts
+        -->
+        <div class="navbar-brand p-3">
+            <img src="images/navigation/logo2w.png" alt="logo" height="80" width="80"> 
+        </div>
+
+        <!--    
+            button with class .navbar-toggler will be able to toggle elements that are collapsed
+            data-bs-toggle has to refer to .collapse class 
+            data-bs-target has to match the id given to elements that wraps collapsed items
+        -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#contentCollapse" 
+                aria-controls="contentCollapse" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <img src="images/navigation/menuw.png" alt="menu">
+          </button>
+
+
+        <!--   
+            .collapse wraps     elements inside not shown until the button pressed
+            .navbar-collapse    if added the elements will collapse upon responsive design
+            id                  is added for the button functionality
+        -->
+        <div class="collapse navbar-collapse" id="contentCollapse">
+            <!--    
+                .navbar-nav     class used for items to be displayed properly
+                .nav-item       used for items in list... in this case ul lists avoided 
+                                and generic div used for easier management
+                .nav-link       used for links in navigation and in this case both classes are in links 
+                .ms-auto        margin set to auto
+                .px-0           padding for both left, right set to 0
+            -->
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link px-0 ">Home</a>
+                <a href="projectPrices.html" class="nav-item nav-link px-0">Project prices</a>
+                <a href="portfolio.html" class="nav-item nav-link px-0 active">Portfolio</a>
+                <a href="contact.html" class="nav-item nav-link px-0">Contact</a>
+                <a href="onGoing.html" class="nav-item nav-link px-0">Ongoing projects</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="frontTextWrapper">
+        <h3>BUILDING THE DREAMS, ONE CONSTRUCTION AT A TIME</h3>
+    </div>
+
+    <div class="parallax"></div>
+
+    <div class="Portfolio">
+        <div class="container">
+            <div class="row">
+                <h2>Our completed projects</h2>
+                <div class="col-sm-6 FirstRow">
+                    <h3>Residential projects</h3>
+                    <div class="containerCarousel1">
+                        <div id="myCarousel1" class="carousel slide carousels" data-bs-ride="carousel">
+
+
+                            <div class="carousel-inner">
+                                <!-- wrapper for slides -->
+                                <div class="carousel-item active">
+                                    <!-- first one active -->
+                                    <div class="card">
+                                        <img src="images/Portfolio/home1.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody1">
+                                            <h5 class="card-title" id="cardtitle1">Home Denmark</h5>
+                                            <p class="card-text" id="cardtext1">Budget: $200,000 <br> Construction time: 7 months</p>
+                                            <a href="https://maps.app.goo.gl/VuRVXtV4MaoZ3Kqi7" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/home2.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody2">
+                                            <h5 class="card-title" id="cardtitle2">Aarhus home</h5>
+                                            <p class="card-text" id="cardtext2">Budget: $300,000 <br> Construction time: 8 months</p>
+                                            <a href="https://maps.app.goo.gl/vXbHQZzpDYB6coaz8" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/home3.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody3">
+                                            <h5 class="card-title" id="cardtitle3">Ihouse Group A/S Boligudlejning</h5>
+                                            <p class="card-text" id="cardtext3">Budget: $150,000 <br> Construction time: 6 months</p>
+                                            <a href="https://maps.app.goo.gl/92hqwp1d6abNgPPp8" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/home4.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody4">
+                                            <h5 class="card-title" id="cardtitle4">A/B Gilholm</h5>
+                                            <p class="card-text" id="cardtext4">Budget: $500,000 <br> Construction time: 12 months</p>
+                                            <a href="https://maps.app.goo.gl/nTX1NKyC5MEerpF47" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                            The buttons that are using bootstrap classes to set the position accordingly
+                        -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Second carousel and category-->
+                <div class="col-sm-6 FirstRow">
+                    <h3>Commercial projects</h3>
+                    <div class="containerCarousel2">
+                        <div id="myCarousel2" class="carousel slide carousels" data-bs-ride="carousel">
+
+
+                            <div class="carousel-inner">
+                                <!-- wrapper for slides -->
+                                <div class="carousel-item active">
+                                    <!-- first one active -->
+                                    <div class="card">
+                                        <img src="images/Portfolio/office1.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody5">
+                                            <h5 class="card-title" id="cardtitle5">Redoffice Konpap A/S Viborg</h5>
+                                            <p class="card-text" id="cardtext5">Budget: $800,000 <br> Construction time: 16 months</p>
+                                            <a href="https://maps.app.goo.gl/2TFE6w1M87GZyofw6" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/office2.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody6">
+                                            <h5 class="card-title" id="cardtitle6">Daarbak Redoffice - Randers
+                                            </h5>
+                                            <p class="card-text" id="cardtext6">Budget: $600,000 <br> Construction time: 14 months</p>
+                                            <a href="https://maps.app.goo.gl/ju11SXAwtrhoJP3T7" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/restaurant.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody7">
+                                            <h5 class="card-title" id="cardtitle7">ZYARA RESTAURANT</h5>
+                                            <p class="card-text" id="cardtext7">Budget: $650,000 <br> Construction time: 13 months</p>
+                                            <a href="https://maps.app.goo.gl/srnEQ9nptwMJBrbV9" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/restaurant2.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody8">
+                                            <h5 class="card-title" id="cardtitle8">Kamii Horsens</h5>
+                                            <p class="card-text" id="cardtext8">Budget: $900,000 <br> Construction time: 19 months</p>
+                                            <a href="https://maps.app.goo.gl/TMGhcXCvCQD3u4CH6" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                        The buttons that are using bootstrap classes to set the position accordingly
+                    -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Second row-->
+            </div>
+            <div class="row">
+                <div class="col-sm-6 SecondRow">
+                    <h3>Industrial projects</h3>
+                    <div class="containerCarousel4">
+                        <div id="myCarousel3" class="carousel slide carousels" data-bs-ride="carousel">
+
+
+                            <div class="carousel-inner">
+                                <!-- wrapper for slides -->
+                                <div class="carousel-item active">
+                                    <!-- first one active -->
+                                    <div class="card">
+                                        <img src="images/Portfolio/warehouse1.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody9">
+                                            <h5 class="card-title" id="cardtitle9">Effect Warehouse Ltd.</h5>
+                                            <p class="card-text" id="cardtext9">Budget: $2,000,000 <br> Construction time: 27 months</p>
+                                            <a href="https://maps.app.goo.gl/qS34ukNFC7YsdTwr5" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/warehouse2.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody10">
+                                            <h5 class="card-title" id="cardtitle10">Royal Unibrew A/S Lager</h5>
+                                            <p class="card-text" id="cardtext10">Budget: $7,000,000 <br> Construction time: 30 months
+                                            </p>
+                                            <a href="https://maps.app.goo.gl/EgNAyrbo1MdGweB3A" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/warehouse3.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody11">
+                                            <h5 class="card-title" id="cardtitle11">GUBI import Horsens</h5>
+                                            <p class="card-text" id="cardtext11">Budget: $6,000,000 <br> Construction time: 32 months</p>
+                                            <a href="https://maps.app.goo.gl/3xtyM1D161txcyV59" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/warehouse4.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody12">
+                                            <h5 class="card-title" id="cardtitle12">TVILUM DISTRIBUTION CENTER FARVANG</h5>
+                                            <p class="card-text" id="cardtext12">Budget: $10,000,000 <br> Construction time: 36 months</p>
+                                            <a href="https://maps.app.goo.gl/zzJb7n4hHB4VmoAv8" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                            The buttons that are using bootstrap classes to set the position accordingly
+                        -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+                <!--4th carousel-->
+
+                <div class="col-sm-6 SecondRow">
+                    <h3>Road construction projects</h3>
+                    <div class="containerCarousel4">
+                        <div id="myCarousel4" class="carousel slide carousels" data-bs-ride="carousel">
+
+
+                            <div class="carousel-inner">
+                                <!-- wrapper for slides -->
+                                <div class="carousel-item active">
+                                    <!-- first one active -->
+                                    <div class="card">
+                                        <img src="images/Portfolio/bridge.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody13">
+                                            <h5 class="card-title" id="cardtitle13">Bresten Bro</h5>
+                                            <p class="card-text" id="cardtext13">Budget: $1,000,000 <br> Construction time: 16 months</p>
+                                            <a href="https://maps.app.goo.gl/w4VX7zGAi18Yo6A1A" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/bridge2.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody14">
+                                            <h5 class="card-title" id="cardtitle14">Vejle Fjord Bridge</h5>
+                                            <p class="card-text" id="cardtext14">Budget: $4,000,000 <br> Construction time: 20 months</p>
+                                            <a href="https://maps.app.goo.gl/pEe6SpcNVVDPj3U38" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/bridge3.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody15">
+                                            <h5 class="card-title" id="cardtitle15">Old Little Belt Bridge</h5>
+                                            <p class="card-text" id="cardtext15">Budget: $3,500,000 <br> Construction time: 19 months</p>
+                                            <a href="https://maps.app.goo.gl/UaUbhiqKguD8T9Zo6" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img src="images/Portfolio/bridge4.jpg" alt="dummy" class="card-img-top">
+                                        <div class="card-body text-center" id="cardbody16">
+                                            <h5 class="card-title" id="cardtitle16">New Little Belt Bridge</h5>
+                                            <p class="card-text" id="cardtext16">Budget: $5,000,000 <br> Construction time: 24 months</p>
+                                            <a href="https://maps.app.goo.gl/fkPup6ukAkttR4cf6" target="_blank" class="btn">Go there via Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                            The buttons that are using bootstrap classes to set the position accordingly
+                        -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <!--Footer displayed on 2 rows, containing links to all pages and buttons redirecting the 
+        user to the Company's Facebook, Twitter and Instagram accounts on the first row and
+        the copyright notice on the second row-->
+        <footer><!--Matej & Florina-->
+            <div class="box">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Company</h4><!--Company related links-->
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col">
+                        <h4>Projects</h4><!--Projects related links-->
+                        <ul>
+                            <li><a href="projectPrices.html">Project prices</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="onGoing.html">Ongoing projects</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col">
+                        <h4>Follow us</h4><!--Social media links-->
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/BobtheBuilder/"><img src="images/footer/facebook.png"
+                                    alt="fb"></a>
+                            <a
+                                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjgvLWT4ZiCAxXLxAIHHfZMBpMQFnoECA8QAQ&url=https%3A%2F%2Ftwitter.com%2FBobtheBuilder&usg=AOvVaw1BUP9ZsFBfxZLP6hW9s_y4&opi=89978449"><img
+                                    src="images/footer/twitter.png" alt="tw"></a>
+                            <a href="https://www.instagram.com/bobthebuilder/"><img src="images/footer/instagram.png"
+                                    alt="ig"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright-row"><!--Copyright notice-->
+                    <div class="copyright-col">
+                        <p id="copyright">Copyright &copy; 1992-2023 BobTheBuilder.com &trade; All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
